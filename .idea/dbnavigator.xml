@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -23,7 +23,11 @@ SELECT user_id FROM u168183796_qaloantec.deposits WHERE amount BETWEEN 100 AND 5
 
 SELECT name FROM u168183796_qaloantec.cron_schedules limit 2
 
-select firstname from u168183796_qaloantec.users where email = 'test@gmail.com';]]></console>
+select firstname from u168183796_qaloantec.users where email = 'test@gmail.com';
+
+select * from users;
+
+update users set mobile = 88889999 where username like '%e_';]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

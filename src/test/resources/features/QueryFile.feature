@@ -24,3 +24,6 @@ Feature: Select Query Execution
         * Query03 hazirlar.
         * Query03 sonuclarini isler.
         * Database connection kapatir.
+
+
+

@@ -17,6 +17,7 @@ public class StepDefinition {
 	Statement statement;
 	ResultSet resultSet;
 	String Query;
+	int intResult;
 
 	QueryManage queryManage = new QueryManage();
 
@@ -129,5 +130,23 @@ public class StepDefinition {
 		JDBCReusableMethods.closeConnection();
 	}
 
+
+
+	//   *************************  UPDATE QUERY ****************************
+
+	//UpdateQuery01
+	@Given("UpdateQuery01 hazirlanir ve calistirilir.")
+	public void update_query01_hazirlanir_ve_calistirilir() {
+	Query = queryManage.getUpdateQuery01();
+
+	intResult = JDBCReusableMethods.updateQuery(Query);
+
+	}
+	@Given("UpdateQuery01 sonuclari islenir.")
+	public void update_query01_sonuclari_islenir() {
+
+	assertEquals(18, intResult);
+
+	}
 
 }
