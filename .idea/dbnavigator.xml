@@ -27,16 +27,16 @@ select firstname from u168183796_qaloantec.users where email = 'test@gmail.com';
 
 select * from users;
 
-update users set mobile = 88889999 where username like '%e_';]]></console>
+update users set mobile = 88889999 where username like '%e_';
+
+update users set mobile = ? where username like ?]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="8217aa9d-3a78-4231-8380-937c2f390682" object-ref="consoles/T141_DERS" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="8217aa9d-3a78-4231-8380-937c2f390682" />
