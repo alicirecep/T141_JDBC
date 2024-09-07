@@ -157,6 +157,8 @@ public static int updateQuery(String query) {
 		return rowList;
 	}
 
+	//recep alici test@gmail.com
+
 	public static List<Object> getColumnData(String query, String column) {
 		executeQuery(query);
 		List<Object> rowList = new ArrayList<>();
